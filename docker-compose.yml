@@ -1,0 +1,9 @@
+
+services:
+  firefly:
+    image: fireflyiii/core:latest
+    container_name: firefly_local
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env

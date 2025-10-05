@@ -1,0 +1,32 @@
+# Git / VCS
+.git
+.gitignore
+.gitattributes
+
+# Env / secrets (Render provides env vars)
+.env
+.env.*
+
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Node / PHP deps (not needed with fireflyiii/core image)
+node_modules
+vendor
+
+# Laravel runtime files
+storage/logs
+storage/framework/cache
+storage/framework/sessions
+storage/framework/views
+public/storage
+public/build
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -1,30 +1,50 @@
-/node_modules
-/storage/*.key
-/vendor
-public/hot
-npm-debug.log
-yarn-error.log
+# Environment files
 .env
-/.ci/php-cs-fixer/vendor
-coverage.xml
-output.txt
+.env.*
+!.env.example
+.envrc
+direnv.toml
+.env.local
+.env.docker
 
-# ignore generated files.
-public/build
+# Dependencies
+/vendor/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+composer.phar
 
-# ignore v1 build files
-resources/assets/v1/node_modules
-resources/assets/v1/build
-public/v1/js/app.js*
-public/v1/js/app_vue.js*
-public/v1/js/create*
-public/v1/js/edit*
-public/v1/js/profile*
-public/v1/js/administrations
-public/v1/js/exchange-rates
-public/v1/js/webhooks
+# Laravel storage and cache
+/public/storage
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+/bootstrap/cache/*
 
-# ignore v2 build files
-resources/assets/v2/node_modules
-resources/assets/v2/build
-public/v2/i18n
+# Frontend build/dev artifacts
+/public/hot
+/public/mix-manifest.json
+/public/build
+/.vite
+
+# PHPUnit / coverage
+.phpunit.result.cache
+coverage/
+
+# IDE/editor
+/.idea/
+!.idea/.gitignore
+/.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+/docker-compose.override.yml
